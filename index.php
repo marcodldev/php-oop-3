@@ -25,6 +25,12 @@ $impiegato->annoProduzione = "1992";
 
 var_dump($prodotti);
 
+try{
+  $impiegato->annoFunc("due");
+} catch(Exception $e) {
+  echo "Si è verificato un errore:". $e->getMessage();
+}
+
 
 
 foreach ($prodotti as $elem) {
