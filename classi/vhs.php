@@ -1,8 +1,9 @@
 <?php
 
 include_once __DIR__ . '/prodotto.php';
-
+// include_once __DIR__ . '../traits/traits.php';
 class vhs extends prodotto {
+  // use AnnoProduzione;
   public $durata;
   public $poster;
 

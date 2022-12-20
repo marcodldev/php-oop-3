@@ -13,14 +13,19 @@ $generi = [
 var_dump($generi);
 
 $prodotti = [
-  new Libro('La scelta di Natan', 'Antonio Puccio', 23.40, $generi['giallo'], true, 'https://immagine-copertina.com', 250, 'flessibile'),
+  new Libro('La scelta di Natan', 'Antonio Puccio', 23.40, $generi['giallo'], true, 'https://immagine-copertina.com', 250, 'flessibile','1993'),
   new audioLibro('La scelta di Natan', 'Antonio Puccio', 23.40, $generi['giallo'], true, 'https://immagine-copertina.com', 120, 'spotify', 'https://spotify-libri.com'),
   new vhs('Il ritorno di Blockbuster', 'vhs production', 12.22, $generi['horror'], false, 'https://immagine-copertina.com', '160', 'testposter')
 ];
 
 $impiegato = new impiegato('Mario', 'Rossi');
 
-var_dump($impiegato);
+$impiegato->annoProduzione = "1992";
+
+
+var_dump($prodotti);
+
+
 
 foreach ($prodotti as $elem) {
   echo get_class($elem);

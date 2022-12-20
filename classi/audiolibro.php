@@ -1,8 +1,10 @@
 <?php
 
 include_once __DIR__ . '/prodotto.php';
+// include_once __DIR__ . '../traits/traits.php';
 
 class audioLibro extends prodotto{
+  // use AnnoProduzione;
   public $durata;
   public $piattaforma;
   public $link;
