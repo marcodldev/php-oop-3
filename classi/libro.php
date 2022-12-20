@@ -1,7 +1,7 @@
 <?php
 
 include_once __DIR__ . '/prodotto.php';
-include_once __DIR__ . '../traits/Traits.php';
+include_once __DIR__ . '../traits/traits.php';
 
 class libro extends prodotto {
 
